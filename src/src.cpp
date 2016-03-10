@@ -137,7 +137,7 @@ runtime code begins here.*/
       cout << "What are you looking for? Some extra DIALOGUE?";
       cin.get();
       cin.ignore();
-      cout << "You arn't going to find anything " << name << ", \nthis is all there is.";
+      cout << "You aren't going to find anything " << name << ", \nthis is all there is.";
       cin.get();
       cin.ignore();
       cout << "ERRx8888 program 'BETA.EXE' has crashed. \nAbort? Y/N :";
