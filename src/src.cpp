@@ -115,6 +115,10 @@ runtime code begins here.*/
       cin.get();
       cout << "You arn't going to find anything " << name << ", \nthis is all there is.";
       cin.get();
+      cout << "ERRx8888 program 'BETA.EXE' has crashed. \nAbort? Y/N :";
+      cin.get();
+      raise(SIGSEGV);
+
   }
   cout << "Well, my NAME's...";
   cin.get();
