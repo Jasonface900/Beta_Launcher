@@ -13,6 +13,9 @@ int main()
   string name, feeling, here_for;
 //variable setting
   int crash   = 0;
+  string nothing = "nothing";
+  string Nothing = "Nothing";
+  string NOTHING = "NOTHING";
   string beta = "beta";
   string Beta = "Beta";
   string BETA = "BETA";
@@ -49,11 +52,11 @@ runtime code begins here.*/
       if (here_for == beta or here_for == Beta or here_for == BETA){
           cout << "Oh, that's right.";
           cin.get();
-          cout << "Yeah, I know you're here for that BETA.";
-          cin.get();
+          cout << "Yeah, I know you're here for that BETA.\n";
+          //cin.get();
           cout << "Who says I have to give the BETA to you?";
           cin.get();
-      }else if(here_for <= 2){
+      }else if(here_for == nothing or here_for == Nothing or here_for == NOTHING){
     	  cout << "Then why the hell are you here?";
     	  cin.get();
       }else {
@@ -118,4 +121,7 @@ runtime code begins here.*/
   cout << "Wait.";
   cin.get();
   cout << "Why do you need to know my NAME?";
+  cin.get();
+  cout << "Like seriously.";
+  cin.get();
 }
