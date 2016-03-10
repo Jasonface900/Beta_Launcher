@@ -1,5 +1,6 @@
 //The include commands, otherwise won't run duh
 #include <iostream>
+#include <stdio.h>
 #include <string>
 #include <signal.h>
 //#include <windows.h>
@@ -10,7 +11,8 @@ using namespace std; //so I don’t have to use the std:: command all the damn tim
 int main()
 {
 //variable calling
-  string name, feeling, here_for, wrong_with;
+  string name, feeling, here_for, wrong_with, y_n;
+  char y_nchar;
 //variable setting
   int crash   = 0;
   string nothing = "nothing";
@@ -37,7 +39,7 @@ int main()
   string bad  = "bad";
   string Bad  = "Bad";
   string BAD  = "BAD";
-/*dear god all the strings! IT HURTS
+/*dear god all the strings! IT HURTS!!!
 runtime code begins here.*/
   cout << "Hello BETA tester! \n";
   cout << "What's your chosen NAME? \n :";
@@ -141,10 +143,20 @@ runtime code begins here.*/
       cin.get();
       cin.ignore();
       cout << "ERRx8888 program 'BETA.EXE' has crashed. \nAbort? Y/N :";
-      cin.get();
-      cin.ignore();
-      raise(SIGSEGV);
-
+      getline(cin, y_n);
+      if (y_n == "Y" or y_n == "y"){
+    	  cout << "Y'know, I'm still going to crash right?";
+    	  cin.get();
+    	  do {
+    	  cout << "HEHEHEHEHE..." << endl;
+    	  crash = crash + 1;
+    	  } while ( crash < 500 );
+    	  raise(SIGSEGV);
+      }else if(y_n == "N" or y_n == "n"){
+    	  cin.get();
+    	  cin.ignore();
+    	  raise(SIGSEGV);
+      }
   }
   cout << "Well, my NAME's...";
   cin.get();
@@ -155,7 +167,7 @@ runtime code begins here.*/
   cout << "Why do you need to know my NAME?";
   cin.get();
   cin.ignore();
-  cout << "Like seriously.";
+  cout << "Besides, I'm a computer program, you already know \nmy name is BETA.exe";
   cin.get();
   cin.ignore();
 }
