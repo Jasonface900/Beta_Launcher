@@ -6,7 +6,7 @@
 //#include <windows.h>
 //#include <mmsystem.h>
 
-using namespace std; //so I don’t have to use the std:: command all the damn time.
+using namespace std; //so I donâ€™t have to use the std:: command all the damn time.
 
 int main()
 {
@@ -170,4 +170,9 @@ runtime code begins here.*/
   cout << "Besides, I'm a computer program, you already know \nmy name is BETA.exe";
   cin.get();
   cin.ignore();
+  cout << "Eh, everyone's a critic. They actually expect an actual name!";
+  cin.get();
+  cin.ignore();
+  cout << "Actually, I need a new name.\nWould you like to supply a name?"
+  getline(cin, y_n);
 }
